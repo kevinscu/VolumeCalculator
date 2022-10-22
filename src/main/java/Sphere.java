@@ -1,15 +1,15 @@
 class Sphere extends Shape
 {
-    Sphere(double r)
+    Sphere(double radius)
     {
-        super(r, 0);
+        super(radius, 0);
     }
     double calcArea()
     {
-        return 4*3.14*r*r;
+        return 4*3.14*radius*radius;
     }
     double calcVolume()
     {
-        return 4*3.14*Math.pow(r,3)/3;
+        return 4*3.14*Math.pow(radius,3)/3;
     }
 }

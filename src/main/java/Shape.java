@@ -1,10 +1,10 @@
 abstract class Shape
 {
-    double r, h;
-    Shape(double r, double h)
+    double radius, height;
+    Shape(double radius, double height)
     {
-        this.r = r;
-        this.h = h;
+        this.radius = radius;
+        this.height = height;
     }
     abstract double calcArea();
     abstract double calcVolume();
