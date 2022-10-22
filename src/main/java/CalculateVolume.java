@@ -4,8 +4,8 @@ class CalculateVolume
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Shape shape = null;
-        double r = 0;
-        double h = 0;
+        double radius = 0;
+        double height = 0;
         int choose;
         {
             do {
@@ -15,20 +15,20 @@ class CalculateVolume
                 switch (choose) {
                     case 1:
                         System.out.print("Enter radius of sphere:");
-                        r = Double.parseDouble(br.readLine());
-                        shape = new Sphere(r);
+                        radius = Double.parseDouble(br.readLine());
+                        shape = new Sphere(radius);
                         break;
                     case 2:
                         System.out.print("Enter height of cube:");
-                        h = Double.parseDouble(br.readLine());
-                        shape = new Cube(r);
+                        height = Double.parseDouble(br.readLine());
+                        shape = new Cube(height, radius);
                         break;
                     case 3:
                         System.exit(0);
                         break;
                 }
                 if (shape != null)
-                    System.out.println("Area = " + shape.calcArea() + "\nVolume = " + shape.calcVolume());
+                    System.out.println("Volume = " + shape.calcVolume());
 
             }
             while (choose != 3);
