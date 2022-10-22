@@ -1,8 +1,8 @@
 class Cube extends Shape
 {
-    Cube (double radius, double height)
+    Cube (double height)
     {
-        super(height, radius);
+        super(0,height);
     }
     double calcVolume()
     {

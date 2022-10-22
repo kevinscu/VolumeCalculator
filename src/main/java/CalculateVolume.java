@@ -21,7 +21,7 @@ class CalculateVolume
                     case 2:
                         System.out.print("Enter height of cube:");
                         height = Double.parseDouble(br.readLine());
-                        shape = new Cube(height, radius);
+                        shape = new Cube(height);
                         break;
                     case 3:
                         System.exit(0);
