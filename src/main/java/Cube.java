@@ -2,11 +2,23 @@ class Cube extends Shape
 {
     Cube (double height)
     {
-        super(0,height);
+        super(0,height,0);
     }
-    double calcVolume()
-    {
-        return height*height;
+
+    @Override
+    double calcVolume() {
+
+
+        double cubeVolume = (height*height*height);
+        cubeVolume = Math.round(cubeVolume * 100);
+        return (cubeVolume / 100);
     }
 }
 
+
+
+//    double calcVolume()
+//    {
+//        return height*height;
+//    }
+//}

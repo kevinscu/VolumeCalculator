@@ -6,11 +6,12 @@ class CalculateVolume
         Shape shape = null;
         double radius = 0;
         double height = 0;
+        double edge = 0;
         int choose;
         {
             do {
 
-                System.out.print("\n1.Sphere" + "\n2.Cube" + "\n3.Exit " + "\nEnter your choice : ");
+                System.out.print("\n1.Sphere" + "\n2.Cube" + "\n3.Regular Tetrahedron" + "\n4.Exit " + "\nEnter your choice : ");
                 choose = Integer.parseInt(br.readLine());
                 switch (choose) {
                     case 1:
@@ -24,14 +25,19 @@ class CalculateVolume
                         shape = new Cube(height);
                         break;
                     case 3:
+                        System.out.print("Enter Edge length of Regular Tetrahedron:");
+                        edge = Double.parseDouble(br.readLine());
+                        shape = new RegularTetrahedron(edge);
+                        break;
+                    case 4:
                         System.exit(0);
                         break;
                 }
-                if (shape != null)
+                //if (shape != null)
                     System.out.println("Volume = " + shape.calcVolume());
 
             }
-            while (choose != 3);
+            while (choose != 4);
 
         }
     }
