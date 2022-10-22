@@ -5,7 +5,7 @@ class CalculateVolume
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Shape shape = null;
         double radius = 0;
-        double height = 0;
+        double width = 0;
         double edge = 0;
         int choose;
         {
@@ -21,8 +21,8 @@ class CalculateVolume
                         break;
                     case 2:
                         System.out.print("Enter height of cube:");
-                        height = Double.parseDouble(br.readLine());
-                        shape = new Cube(height);
+                        width = Double.parseDouble(br.readLine());
+                        shape = new Cube(width);
                         break;
                     case 3:
                         System.out.print("Enter Edge length of Regular Tetrahedron:");

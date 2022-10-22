@@ -1,14 +1,14 @@
 abstract class Shape
 {
     double radius;
-    double height;
+    double width;
     double edge;
-    Shape(double radius, double height, double edge)
+    Shape(double radius, double width, double edge)
     {
         this.radius = radius;
-        this.height = height;
+        this.width = width;
         this.edge = edge;
-
     }
+
     abstract double calcVolume();
 }

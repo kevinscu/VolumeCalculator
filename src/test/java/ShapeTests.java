@@ -1,13 +1,12 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class ShapeTests {
 
     Cube cubeTest;
     Sphere sphereTest;
     RegularTetrahedron RegularTetrahedronTest;
-    
+
     @Test
     public void testSphereVolumeWithRadiusOne()  {
         sphereTest = new Sphere(1);
